@@ -6,14 +6,24 @@
     android:layout_height="match_parent"
     tools:context="com.acme.csci3130.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/button"
+        android:layout_width="141dp"
+        android:layout_height="79dp"
+        android:layout_marginLeft="8dp"
+        android:onClick="sendMessage"
+        android:text="Send"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+        app:layout_constraintLeft_toRightOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/helloText"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:ems="10"
+        android:inputType="textFilter"
+        android:text="Enter text"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="254dp" />
 
 </android.support.constraint.ConstraintLayout>
